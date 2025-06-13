@@ -49,7 +49,7 @@ All commands should be run from your terminal or command prompt in the directory
 |-------------|--------|----------|
 | --clean       | (No argument)    | Required to delete data. Executes the cleanup process after displaying a warning and receiving user confirmation.       |
 | --types     | cache,history | (Optional) A comma-separated list of data types to clean. If not provided, it defaults to all available types.        |
-| Orange      | Orange | 8        |
+
 
     * Available Data Types: history, cookies, downloads, cache, code_cache 
 
@@ -62,44 +62,48 @@ All commands should be run from your terminal or command prompt in the directory
 
 
 # Examples
-##1. Perform a Dry Run (Default, Safe Mode)
+## 1. Perform a Dry Run (Default, Safe Mode)
 
 This command will analyze all profiles and show a report of what can be cleaned without deleting anything.
 |  Operating system  | Command:  | 
-|:-------------|:--------------:|--------------:|
+|-------------|--------------|
 | On Windows          | py chrome_cleaner.py         |
 | On macOS / Linux    | python3 chrome_cleaner.py |
 
 
-*. Clean ALL Default Data Types
+## 2. Clean ALL Default Data Types
 
 This command will permanently delete all default data types (history, cookies, downloads, cache, and code_cache) from every profile after you confirm.
 
-### On Windows
-py chrome_cleaner.py --clean
+|  Operating system  | Command:  | 
+|-------------|--------------|
+| On Windows          | py chrome_cleaner.py --clean         |
+| On macOS / Linux    | python3 chrome_cleaner.py --clean |
 
-### On macOS / Linux
-python3 chrome_cleaner.py --clean
 
-##3. Clean ONLY Cache and Code Cache
+## 3. Clean ONLY Cache and Code Cache
 
 This command will permanently delete only the cache and code_cache folders from every profile.
 
-### On Windows
-py chrome_cleaner.py --clean --types cache,code_cache
 
-### On macOS / Linux
-python3 chrome_cleaner.py --clean --types cache,code_cache
+|  Operating system  | Command:  | 
+|-------------|--------------|
+| On Windows          | py chrome_cleaner.py --clean --types cache,code_cache         |
+| On macOS / Linux    | python3 chrome_cleaner.py --clean --types cache,code_cache |
 
-##4. Clean ONLY History
+
+
+## 4. Clean ONLY History
 
 This command will permanently delete only the browsing history from every profile.
 
-### On Windows
-py chrome_cleaner.py --clean --types history
 
-### On macOS / Linux
-python3 chrome_cleaner.py --clean --types history
+|  Operating system  | Command:  | 
+|-------------|--------------|
+| On Windows          | py chrome_cleaner.py --clean --types history       |
+| On macOS / Linux    | python3 chrome_cleaner.py --clean --types history |
+
+
 
 # License
 MIT License
@@ -128,8 +132,7 @@ SOFTWARE.
 Contributions are welcome! If you'd like to contribute to the project, please fork the repository, create a feature branch, and submit a pull request.
 
 Steps to Contribute:
-Fork the repository
-
+* Fork the repository
 * Create a new branch (git checkout -b feature-branch)
 * Commit your changes (git commit -m 'Add new feature')
 * Push to the branch (git push origin feature-branch)
