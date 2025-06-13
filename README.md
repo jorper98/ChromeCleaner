@@ -34,19 +34,19 @@ psutil: To safely check if the Chrome process is running.
 
 * Install the required Python package using pip. It's recommended to use the Python launcher py on Windows or python3 on macOS/Linux to ensure the package is installed for the correct Python version.
 
-* On Windows
-** py -m pip install psutil
+|  Operating system  | Command:  | 
+|-------------|--------------|
+| On Windows          | py -m pip install psutil         |
+| On macOS / Linux    | python3 -m pip install psutil |
 
-* On macOS / Linux
-** python3 -m pip install psutil
 
 # Usage
 All commands should be run from your terminal or command prompt in the directory where the chrome_cleaner.py script is located.
 
 # Command-Line Switches
       
-| Switch       | Argument  | Description |
-|-------------|--------|----------|
+| Switch          | Argument     | Description |
+|-----------------|--------------|----------|
 | --clean       | (No argument)    | Required to delete data. Executes the cleanup process after displaying a warning and receiving user confirmation.       |
 | --types     | cache,history | (Optional) A comma-separated list of data types to clean. If not provided, it defaults to all available types.        |
 
