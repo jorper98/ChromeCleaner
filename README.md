@@ -1,6 +1,9 @@
 # Chrome Profile Cleanup Automation
 A cross-platform Python script to analyze and clean browsing data (cache, cookies, history) from all Google Chrome profiles on a user's computer. This tool helps improve browser performance, free up disk space, and protect privacy by automating the cleanup process.
 
+# Current Version
+## v.03 
+
 # Original Idea: 
     Blog post at: https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/
     Followed by a  30 minute Vibe Coding session  first with Perplexity and then Gemini 2.5 Pro
@@ -25,9 +28,10 @@ A cross-platform Python script to analyze and clean browsing data (cache, cookie
 * Data is only deleted when the script is run with the --clean flag and after the user provides explicit confirmation.
 
 # Dependencies
-The script requires Python 3 and one external package:
+The script requires Python 3 and two external packages:
 
-psutil: To safely check if the Chrome process is running.
+    psutil: To safely check if the Chrome process is running.
+    rich: To display the analysis report in a clean, formatted table.
 
 # Installation
 * Clone the repository or download the script to your local machine.
@@ -36,17 +40,21 @@ psutil: To safely check if the Chrome process is running.
 
 |  Operating system  | Command:  | 
 |-------------|--------------|
-| On Windows          | py -m pip install psutil         |
-| On macOS / Linux    | python3 -m pip install psutil |
+| On Windows          | py -m pip install psutil rich         |
+| On macOS / Linux    | python3 -m pip install psutil rich |
+
+
+
 
 
 # Usage
 All commands should be run from your terminal or command prompt in the directory where the chrome_cleaner.py script is located.
 
-# Command-Line Switches
+## Command-Line Switches
       
 | Switch          | Argument     | Description |
 |-----------------|--------------|----------|
+| --help       | (No argument)    | LIst available parameters.       |
 | --clean       | (No argument)    | Required to delete data. Executes the cleanup process after displaying a warning and receiving user confirmation.       |
 | --types     | cache,history | (Optional) A comma-separated list of data types to clean. If not provided, it defaults to all available types.        |
 
@@ -56,12 +64,7 @@ All commands should be run from your terminal or command prompt in the directory
 
 
 
-
-
-
-
-
-# Examples
+## Examples
 ## 1. Perform a Dry Run (Default, Safe Mode)
 
 This command will analyze all profiles and show a report of what can be cleaned without deleting anything.
@@ -71,7 +74,7 @@ This command will analyze all profiles and show a report of what can be cleaned 
 | On macOS / Linux    | python3 chrome_cleaner.py |
 
 
-## 2. Clean ALL Default Data Types
+### 2. Clean ALL Default Data Types
 
 This command will permanently delete all default data types (history, cookies, downloads, cache, and code_cache) from every profile after you confirm.
 
@@ -81,7 +84,7 @@ This command will permanently delete all default data types (history, cookies, d
 | On macOS / Linux    | python3 chrome_cleaner.py --clean |
 
 
-## 3. Clean ONLY Cache and Code Cache
+### 3. Clean ONLY Cache and Code Cache
 
 This command will permanently delete only the cache and code_cache folders from every profile.
 
@@ -93,7 +96,7 @@ This command will permanently delete only the cache and code_cache folders from 
 
 
 
-## 4. Clean ONLY History
+### 4. Clean ONLY History
 
 This command will permanently delete only the browsing history from every profile.
 
@@ -104,6 +107,23 @@ This command will permanently delete only the browsing history from every profil
 | On macOS / Linux    | python3 chrome_cleaner.py --clean --types history |
 
 
+
+# Change Log
+## v0.4
+* Added better display of results (in table format) to the terminal requiring rich library
+* Added Profile Name to the Column List
+* fix error not showing the correct cookies in profile counter
+* Updated Readme.MD file
+
+## v0.3
+* Removed Downloads column, as it is just a counter. Will clean the counter as part of the cache cleanup
+* Added --force-close  as an option to close Chrome Browser
+
+## v0.2  
+* Fix Some bugs 
+
+## v0.1  
+*Initial Version  
 
 # License
 MIT License
