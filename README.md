@@ -4,11 +4,9 @@ A cross-platform Python script to analyze and clean browsing data (cache, cookie
 # Current Version:  v0.4
 
 # Original Idea: 
-    Blog post at: 
-        [https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/](https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/)
-    Followed by a  30 minute Vibe Coding session  first with Perplexity and then Gemini 2.5 Pro
-        Blog post here:
-        [https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/](https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/)
+Blog post at: [How to Back Up All Chrome Profiles from Your Computer](https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/)
+Followed by a  30 minute Vibe Coding session  first with Perplexity and then Gemini 2.5 Pro
+Blog post here:[My Session to create a Chrome Profile cleaner script](https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/)
          
 
 
