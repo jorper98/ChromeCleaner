@@ -52,7 +52,7 @@ All commands should be run from your terminal or command prompt in the directory
 
 ## Command-Line Switches
       
-| Switch          | Argument     | Description |
+| <img src="" width="200">Switch          | Argument     | Description |
 |-----------------|--------------|----------|
 | --help       | (No argument)    | LIst available parameters.       |
 | --clean       | (No argument)    | Required to delete data. Executes the cleanup process after displaying a warning and receiving user confirmation.       |
