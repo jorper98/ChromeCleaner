@@ -1,13 +1,15 @@
 # Chrome Profile Cleanup Automation
 A cross-platform Python script to analyze and clean browsing data (cache, cookies, history) from all Google Chrome profiles on a user's computer. This tool helps improve browser performance, free up disk space, and protect privacy by automating the cleanup process.
 
-# Current Version
-## v.03 
+# Current Version:  v0.4
 
 # Original Idea: 
-    Blog post at: https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/
+    Blog post at: 
+        [https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/](https://jorgep.com/blog/how-to-back-up-all-chrome-profiles-from-your-computer/)
     Followed by a  30 minute Vibe Coding session  first with Perplexity and then Gemini 2.5 Pro
-        Blog post here: https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/
+        Blog post here:
+        [https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/](https://jorgep.com/blog/my-session-to-create-a-chrome-profile-cleaner-script/)
+         
 
 
 # Features
